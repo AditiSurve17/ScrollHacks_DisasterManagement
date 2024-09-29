@@ -135,7 +135,7 @@ const PlanForm = ({ onClose }) => {
         )}
 
         {generatedPlan && (
-          <div className="mt-10 p-6 bg-white shadow-lg rounded-lg">
+          <div className="mt-10 p-6 bg-white shadow-lg rounded-lg overflow-y-auto max-h-96">
             <h2 className="text-3xl font-bold mb-6">Generated Plan</h2>
             <div className="prose max-w-none">
               <ReactMarkdown>{generatedPlan}</ReactMarkdown>
