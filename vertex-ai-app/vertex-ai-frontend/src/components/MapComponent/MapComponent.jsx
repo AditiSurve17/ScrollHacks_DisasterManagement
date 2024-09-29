@@ -40,7 +40,7 @@ const MapComponent = () => {
   // Fetch nearby places using Google Places API
   const fetchNearbyPlaces = async (location) => {
     const { lat, lng } = location;
-    const apiKey = 'AIzaSyDzF8F7iwWQohh6rEogW9jUEojnJWPscWc'; // Replace with your API Key
+    const apiKey = 'YOUR_API_KEY'; // Replace with your API Key
 
     try {
       const response = await axios.get(
@@ -74,7 +74,7 @@ const MapComponent = () => {
         {/* Right Side Google Map */}
         <div className="map-container">
           {userLocation ? (
-            <LoadScript googleMapsApiKey="AIzaSyDzF8F7iwWQohh6rEogW9jUEojnJWPscWc">
+            <LoadScript googleMapsApiKey="YOUR_API_KEY">
               <GoogleMap
                 mapContainerStyle={containerStyle}
                 center={mapCenter}
